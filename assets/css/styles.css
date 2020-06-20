@@ -1,0 +1,144 @@
+
+body {
+    background-color: white;
+    font-size: 18px;
+
+}
+main{
+    
+}
+header {
+    background-color: red;
+    width:100%;
+    margin: 10px;
+}
+/*navigation styling*/
+nav {
+    background-color: cadetblue;
+}
+
+nav ul li {
+    display: inline;
+    
+}
+nav ul li a {
+    color:black;
+    text-decoration: none;
+    background-color: cornflowerblue;
+    padding: 10px 15px;
+}
+nav ul li a:hover{
+    background-color:aqua;
+}
+/*footer styling*/
+footer {
+    background-color: gray;
+}
+/*logo*/
+h1 {
+    font-size: 2.5rem;
+    padding: 0px 0px 30px 0px;
+}
+h1 a{
+        text-decoration: none;
+}
+h1 a:hover {
+    color: aqua;
+}
+
+h2 {
+    font-size: 1.75em;
+    color:darkslategray;
+    font-weight: 100;
+}
+h3 {
+    font-size: 28px;
+    font-weight: 50px;
+    color:black;
+    text-align: center;
+    padding: 50px 50px;
+/*    margin: 50px 50px;*/
+    
+}
+
+p{
+    width:90%
+    margin: 0 auto;
+}
+
+main img {
+    width:100%;
+}
+.wrapper {
+    width: 50%;
+    padding: 50px;
+    margin: 0 auto;
+}
+main ul {
+    margin:170px;
+}
+
+.side-nav {
+  width: 150px;
+  position: absolute;
+  z-index: 1;
+  top: 700px;
+  left: 100px;
+  background-color:darkgoldenrod;
+  overflow-x:hidden;
+  padding: 40px 10px;
+}
+
+.side-nav ul li a{
+  padding: 16px 16px 16px 16px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  color:brown;
+  display: block;
+}
+
+.side-nav ul li a:hover {
+  color:cornflowerblue;
+}
+.media-link {
+    float:right;
+    position:relative;
+    top:-60px;
+    right:0px;
+}
+.facebook{
+    width:40px;
+    height:40px;
+}
+.instagram {
+    height: 40px;
+    width: 40px;
+}
+.p-footer{
+    padding: 20px 10px;
+}
+footer h3{
+    padding:10px;
+    margin:0px;
+    text-align: left;
+}
+.list-footer li{
+    display:inline;
+
+}
+.list-footer li a {
+    padding-left:180px;
+    padding-top:20px;
+    text-decoration: none;
+    color:black;
+}
+.list-footer li a:hover{
+    color: aqua;
+}
+.list-footer li a:visited {
+    color: darkgrey;
+}
+.current-page{
+    border-bottom: 5px solid black;
+}
