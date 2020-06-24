@@ -1,34 +1,48 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Sans+SC:wght@300&display=swap');
 body {
     background-color: white;
     font-size: 18px;
+    font-family: 'Noto Sans SC', sans-serif;
 
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bree Serif', serif;
 }
 main{
     
 }
 header {
-    background-color: red;
     width:100%;
     margin: 10px;
 }
 /*navigation styling*/
 nav {
-    background-color: cadetblue;
+    float: right;
 }
 
+nav ul {
+    
+}
 nav ul li {
     display: inline;
     
 }
 nav ul li a {
     color:black;
+    font-weight: bold;
     text-decoration: none;
-    background-color: cornflowerblue;
+/*    background-color: cornflowerblue;*/
     padding: 10px 15px;
+    border-right: 2px solid black;
 }
 nav ul li a:hover{
     background-color:aqua;
+    border-bottom:0px;
 }
 /*footer styling*/
 footer {
@@ -44,33 +58,43 @@ h1 a{
 }
 h1 a:hover {
     color: aqua;
+    cursor: pointer;
 }
 
 h2 {
     font-size: 1.75em;
     color:darkslategray;
     font-weight: 100;
+    padding:60px 0 5px 0;
+    border-bottom: 3px double red;
+    text-align: center;
 }
 h3 {
     font-size: 28px;
-    font-weight: 50px;
-    color:black;
     text-align: center;
     padding: 50px 50px;
-/*    margin: 50px 50px;*/
     
 }
 
 p{
     width:90%
     margin: 0 auto;
+    line-height: 30px;
+    margin: 20px 0;
 }
 
 main img {
     width:100%;
+    margin: 40px 0px;
+}
+
+.body-image {
+    width:90%;
+    padding: 10px;
+    background-color: white;
 }
 .wrapper {
-    width: 50%;
+    width: 70%;
     padding: 50px;
     margin: 0 auto;
 }
@@ -78,34 +102,15 @@ main ul {
     margin:170px;
 }
 
-.side-nav {
-  width: 150px;
-  position: absolute;
-  z-index: 1;
-  top: 700px;
-  left: 100px;
-  background-color:darkgoldenrod;
-  overflow-x:hidden;
-  padding: 40px 10px;
-}
-
-.side-nav ul li a{
-  padding: 16px 16px 16px 16px;
-  text-decoration: none;
-  text-align: center;
-  font-size: 20px;
-  color:brown;
-  display: block;
-}
-
-.side-nav ul li a:hover {
-  color:cornflowerblue;
-}
 .media-link {
     float:right;
     position:relative;
-    top:-60px;
+    top:-90px;
     right:0px;
+}
+/*Media icon */
+.media-link p {
+    margin: 20px 0px 5px 0px;
 }
 .facebook{
     width:40px;
@@ -140,5 +145,63 @@ footer h3{
     color: darkgrey;
 }
 .current-page{
-    border-bottom: 5px solid black;
+    border-bottom: 3px solid black;
 }
+
+.next {
+    position:relative;
+    top: -10px;
+    right: -720px;
+    text-decoration: none;
+}
+
+.next:hover {
+    color: aqua;
+}
+.previous {
+    text-decoration: none;
+}
+.previous:hover {
+    color: aqua;
+}
+.text-over-image {
+    position:absolute;
+    top:280px;
+    left:480px;
+    border-bottom: 2px solid grey;
+    padding: 0;
+}
+.left-image {
+    float:right;
+    width:50%;
+    min-height:500px;
+}
+.right-image {
+    float:left;
+    width:50%;
+    min-height:500px;
+    padding: 0 20px 10px 0;
+}
+.north-wing {
+    padding-bottom: 180px;
+    padding-top: 30px;
+}
+.pool-area {
+    padding-bottom: 80px;
+}
+.list-styling ul{
+    list-style: square inside none;
+    margin:0;
+    padding-left: 80px; 
+}
+.list-styling ul li {
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
