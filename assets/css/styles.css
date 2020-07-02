@@ -23,6 +23,7 @@ header {
 /*navigation styling*/
 nav {
     float: right;
+    margin-top: 18px;
 }
 
 nav ul {
@@ -37,7 +38,7 @@ nav ul li a {
     font-weight: bold;
     text-decoration: none;
 /*    background-color: cornflowerblue;*/
-    padding: 10px 15px;
+    padding:15px 10px;
     border-right: 2px solid black;
 }
 nav ul li a:hover{
@@ -50,8 +51,10 @@ footer {
 }
 /*logo*/
 h1 {
-    font-size: 2.5rem;
-    padding: 0px 0px 30px 0px;
+    font-size: 2.25rem;
+    padding: 20px 10px;
+    background-color:antiquewhite ;
+    display:inline;
 }
 h1 a{
         text-decoration: none;
@@ -141,17 +144,19 @@ footer h3{
 .list-footer li a:hover{
     color: aqua;
 }
+/*
 .list-footer li a:visited {
     color: darkgrey;
 }
+*/
 .current-page{
     border-bottom: 3px solid black;
 }
 
 .next {
-    position:relative;
-    top: -10px;
-    right: -720px;
+/*    position:relative;*/
+/*    top: -10px;*/
+/*    right: -720px;*/
     text-decoration: none;
 }
 
@@ -197,11 +202,43 @@ footer h3{
 .list-styling ul li {
     line-height: 30px;
 }
-
-
-
-
-
-
-
-
+.footer-navigation {
+    height: 20px;
+    padding: 20px 0;
+}
+.footer-navigation .left {
+    float: left;
+    width: 45%;
+}
+.footer-navigation .right {
+    float: right;
+    width: 45%;
+    text-align: right;
+}
+/*back to top button*/
+.back-top .hidden{
+    visibility: hidden;
+    line-height: 0px;
+    padding-bottom: 10px;
+}
+.back-top:hover .hidden{
+    visibility: visible;
+}
+.back-top .button {
+    width: 60px;
+    height:60px;
+    background-color: grey;
+    border-radius: 100%;
+}
+.back-top .button:hover {
+    background-color:aqua;
+    border-radius: 0;
+    border-color: aqua;
+}
+.back-top .button a {
+    font-size: 40px;
+    padding: 50px 0px 10px 9px;
+}
+#remove-right-border {
+    border-right: 0;
+}
