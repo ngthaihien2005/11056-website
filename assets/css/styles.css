@@ -39,7 +39,7 @@ nav ul li a {
     text-decoration: none;
 /*    background-color: cornflowerblue;*/
     padding:15px 10px;
-    border-right: 2px solid black;
+/*    border-right: 2px solid black;*/
 }
 nav ul li a:hover{
     background-color:aqua;
@@ -57,7 +57,10 @@ h1 {
     display:inline;
 }
 h1 a{
-        text-decoration: none;
+    text-decoration: none;
+    font-size: 90%;
+    letter-spacing: 1px;
+    word-spacing: 5px;
 }
 h1 a:hover {
     color: aqua;
@@ -71,6 +74,8 @@ h2 {
     padding:60px 0 5px 0;
     border-bottom: 3px double red;
     text-align: center;
+    word-spacing: 3px;
+    letter-spacing: 1px;
 }
 h3 {
     font-size: 28px;
@@ -103,6 +108,9 @@ main img {
 }
 main ul {
     margin:170px;
+}
+p, main li {
+    text-align: justify;
 }
 
 .media-link {
@@ -241,4 +249,63 @@ footer h3{
 }
 #remove-right-border {
     border-right: 0;
+}
+.external-link {
+    text-decoration: none;
+}
+.external-link:hover {
+    text-decoration: underline;
+}
+/*information page*/
+.information-ul {
+    margin:10px 40px;
+}
+.information-ul li a {
+    text-decoration: none;
+}
+.information-ul li a:hover {
+    color: aqua;
+}
+.information-ul li {
+    padding: 10px 0px;
+}
+.contact-us ul {
+    margin:10px 40px;
+}
+.contact-us ul li{
+    margin:10px 0;
+}
+.contact-us img {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 300px;
+}
+.first, .second {
+  float: left;
+  width: 45%;
+  padding: 10px 10px;
+}
+.information-img::after {
+  content: "";
+  clear: both;
+  display:table;
+}
+#control {
+    height: 565px;
+}
+.about-us img {
+    border: 5px solid #DAC7CF;
+    background: #DAC7CF;
+}
+/*responsive device*/
+@media screen and (max-device-width:1280px) {
+    .wrapper {
+        background-color: red;
+    }
+    nav {
+    float: left;
+    margin-top: 50px;
+        margin-bottom: 50px;
+    }
 }
