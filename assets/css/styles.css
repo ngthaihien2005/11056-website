@@ -275,11 +275,10 @@ footer h3{
 .contact-us ul li{
     margin:10px 0;
 }
-.contact-us img {
+.contact-img {
+    text-align: center;
     width: 50%;
     height: 50%;
-    position: relative;
-    left: 300px;
 }
 .first, .second {
   float: left;
@@ -308,4 +307,9 @@ footer h3{
     margin-top: 50px;
         margin-bottom: 50px;
     }
+}
+@media screen and (max-device-width:768px) {
+    .first,.second {
+        width:100%;
+    } 
 }
