@@ -18,31 +18,32 @@ main{
 }
 header {
     width:100%;
-    margin: 10px;
+    margin: 0.625em; /*10px*/
 }
 /*navigation styling*/
 nav {
     float: right;
-    margin-top: 18px;
+    margin-top: 1.125em; /*18px*/
 }
 
 nav ul {
     
 }
 nav ul li {
-    display: inline;
-    
+    display: inline-block;
+    margin:2.2em 0.1em; /*15px 10px*/
 }
 nav ul li a {
     color:black;
     font-weight: bold;
     text-decoration: none;
 /*    background-color: cornflowerblue;*/
-    padding:15px 10px;
+/*    padding:0.9375em 0.625em;*/
 /*    border-right: 2px solid black;*/
+    padding:0.4em 0.625em;
 }
 nav ul li a:hover{
-    background-color:aqua;
+    background-color:antiquewhite;
     border-bottom:0px;
 }
 /*footer styling*/
@@ -52,54 +53,59 @@ footer {
 /*logo*/
 h1 {
     font-size: 2.25rem;
-    padding: 20px 10px;
+    padding: 1.25em 0.625em;
     background-color:antiquewhite ;
-    display:inline;
+    display:inline-block;
 }
 h1 a{
     text-decoration: none;
     font-size: 90%;
-    letter-spacing: 1px;
-    word-spacing: 5px;
+    letter-spacing: 0.0625em;
+    word-spacing: 0.3125em;
 }
 h1 a:hover {
-    color: aqua;
+    color: #DB7093;
     cursor: pointer;
 }
 
 h2 {
-    font-size: 1.75em;
+    font-size: 1.9em;
     color:darkslategray;
     font-weight: 100;
-    padding:60px 0 5px 0;
+    padding: 2em 0 0.3125em 0;
     border-bottom: 3px double red;
     text-align: center;
-    word-spacing: 3px;
-    letter-spacing: 1px;
+    word-spacing: 0.1875em;
+    letter-spacing: 0.0625em;
 }
 h3 {
-    font-size: 28px;
+    font-size: 1.75em;
     text-align: center;
-    padding: 50px 50px;
-    
+/*    padding: 50px 50px;*/
+}
+main h3{
+	margin: 5em 0 2em 0;
 }
 
 p{
     width:90%
     margin: 0 auto;
-    line-height: 30px;
-    margin: 20px 0;
+    line-height: 1.875em;
+    margin: 1.25em 0;
 }
 
 main img {
     width:100%;
-    margin: 20px 0px;
+    margin: 1.25em 0;
 }
 .page-title {
+    background-image: url(../images/churchill-house-4.jpg);
+	background-size: cover;
     width:100%;
-    height:630px;
+    height:auto;
     position: relative;
     overflow: hidden;
+	background-color: red;
 }
 
 .page-title .overlay {
@@ -115,35 +121,36 @@ main img {
     position: absolute;
     width: 100%;
     text-align: center;
-    top:17%;
+    bottom:48%;
     color: #57138a;
     border-bottom: 0;  
     font-size: 3em;
 }
 .page-title img {
+	visibility: hidden;
     filter:grayscale();
-    width: 100%;
-    margin-top: 30px;
+    height: 100%;
+    margin-top: 1.875em;
 }
 
 .body-image {
     width: 100%;
-    margin: 20px 0px;
-    border: 15px solid #DAC7CF;
+    margin: 1.25em 0px;
+    border: 0.9375em solid #DAC7CF;
     background: #DAC7CF;
 }
 .wrapper {
     width: 70%;
-    padding: 50px;
+    padding: 3.125em;
     margin: 0 auto;
 }
 main ul{
     list-style: square inside none;
     margin:0;
-    padding-left: 80px; 
+    padding-left: 5em; 
 }
 main ul li {
-    line-height: 30px;
+    line-height: 1.875em;
     font-style: italic;
 }
 p, main li {
@@ -152,46 +159,50 @@ p, main li {
 
 .media-link {
     float:right;
+/*
     position:relative;
     top:-90px;
     right:0px;
+*/
 }
 /*Media icon */
 .media-link p {
-    margin: 20px 0px 5px 0px;
+/*    margin: 5px 0px 5px 0px;*/
 }
-.facebook{
-    width:40px;
-    height:40px;
+.facebook,.instagram{
+    width:2.5em;
+    height:2.5em;
 }
-.instagram {
-    height: 40px;
-    width: 40px;
+.facebook img:hover,.intagram img:hover {
+    cursor: pointer;
 }
 .p-footer{
-    padding: 20px 10px;
+    padding: 0.625em 0.625em;
 }
 footer h3{
-    padding:10px;
+    padding:0.625em;
     margin:0px;
-    text-align: left;
+/*    text-align: left;*/
+    float: left;
 }
 
 .list-footer {
-    width: 80%;
+     width: 100%;
+	text-align: center;
+	clear: both;
 }
 .list-footer li{
-    display:inline;
+    display:inline-block;
 
 }
 .list-footer li a {
-    padding-left:180px;
-    padding-top:20px;
+    padding-left:1.25em;
+    padding-top:1.25em;
     text-decoration: none;
     color:black;
 }
 .list-footer li a:hover{
-    color: aqua;
+    color: antiquewhite;
 }
 /*
 .list-footer li a:visited {
@@ -199,7 +210,7 @@ footer h3{
 }
 */
 .current-page{
-    border-bottom: 3px solid black;
+    border-bottom: 0.1875em solid #b18b9b;
 }
 
 .next {
@@ -209,43 +220,34 @@ footer h3{
     text-decoration: none;
 }
 
-.next:hover {
-    color: aqua;
+.next:hover,.previous:hover {
+    color: #DB7093;
 }
 .previous {
     text-decoration: none;
 }
-.previous:hover {
-    color: aqua;
-}
-/*
-.text-over-image {
-    position:absolute;
-    top:280px;
-    left:480px;
-    border-bottom: 2px solid grey;
-    padding: 0;
-}
-*/
+
 .left-image {
     float: right;
     width: 50%;
     height: 50%;
-    padding: 5px 20px;
+    padding: 0.3125em 1.25em;
 }
 .right-image {
     float: left;
     width: 50%;
     height: 50%;
-    padding: 5px 20px;
+    padding: 0.3125em 1.25em;
 }
+/*
 .pool-area {
-    padding-bottom: 80px;
+    padding-bottom: 5em;
 }
+*/
 
 .footer-navigation {
-    height: 20px;
-    padding: 20px 0;
+    height: 1.25em;
+    padding: 1.25em 0;
 }
 .footer-navigation .left {
     float: left;
@@ -260,25 +262,25 @@ footer h3{
 .back-top .hidden{
     visibility: hidden;
     line-height: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 0.625em;
 }
 .back-top:hover .hidden{
     visibility: visible;
 }
 .back-top .button {
-    width: 60px;
-    height:60px;
+    width: 3.75em;
+    height:3.75em;
     background-color: grey;
     border-radius: 100%;
 }
 .back-top .button:hover {
-    background-color:aqua;
+    background-color:antiquewhite;
     border-radius: 0;
-    border-color: aqua;
+    border-color: antiquewhite;
 }
 .back-top .button a {
-    font-size: 40px;
-    padding: 50px 0px 10px 9px;
+    font-size: 2.5em;
+    padding: 3.125em 0em 0.625em 0.26em;
 }
 #remove-right-border {
     border-right: 0;
@@ -291,50 +293,60 @@ footer h3{
 }
 /*information page*/
 .information-ul {
-    margin:10px 40px;
+    margin:0.625em 2.5em;
 }
 .information-ul li a {
     text-decoration: none;
 }
 .information-ul li a:hover {
-    color: aqua;
+    color: #b18b9b;
 }
 .information-ul li {
-    padding: 10px 0px;
+    padding: 0.625em 0em ;
 }
 .contact-us ul {
-    margin:10px 40px;
+    margin:0.625em 2.5em;
 }
 .contact-us ul li{
-    margin:10px 0;
+    margin:0.625em 0;
 }
 .contact-img {
     text-align: center;
-    width: 50%;
-    height: 50%;
+	width: 100%;
 }
+	.contact-img img{
+		width: 20%;
+	}
 .first {
   float: left;
   width: 45%;
-  padding: 10px 10px;
+  padding: 0.625em 0.625em;
     display: inline;
 }
 .second {
   float: right;
   width: 45%;
-  padding: 10px 10px;
+  padding: 0.625em 0.625em;
 }
 .information-img::after {
   content: "";
   clear: both;
   display:table;
 }
-#control {
-    height: 565px;
+#control-1,#control-2,#control-3,#control-4,#control-5,#control-6,#control-7,#control-8 {
+    height: 35.3125em;
 }
 .about-us img,.first,.second {
-    border: 5px solid #DAC7CF;
+    border: 0.3125em solid #DAC7CF;
     background: #DAC7CF;
+}
+.information-page ul{
+    list-style: inside none;
+    padding-left: 1.25em;
+}
+/*list next to image to reduce padding left*/
+.list-next-image ul{
+    padding-left: 2.5em;
 }
 /*quote */
 .quote {
@@ -343,9 +355,9 @@ footer h3{
     font-size: 1.5rem;
     font-style: italic;
     font-weight: 550;
-    padding: 5px 0;
-    border-top: 1px double #211738;
-    border-bottom: 1px double #211738;
+    padding: 0.3125em 0;
+    border-top: 0.0625em double #211738;
+    border-bottom: 0.0625em double #211738;
 }
 /*responsive device*/
 @media screen and (max-device-width:1280px) {
@@ -354,12 +366,15 @@ footer h3{
     }
     nav {
     float: left;
-    margin-top: 50px;
-        margin-bottom: 50px;
+    margin-top: 3.125em;
+    margin-bottom: 3.125em;
     }
 }
 
 @media screen and (max-device-width:768px) {
+    .wrapper {
+        width: 90%;
+    }
     .first,.second {
         width:100%;
     } 
@@ -367,10 +382,10 @@ footer h3{
         float: none;
         width: 100%;
         height: 50%;
-        padding: 5px 5px;
+        padding: 0.0625em 0.0625em;
     }
     main ul{
-        padding-left: 20px; 
+        padding-left: 1.25em; 
     }
 }
 @media screen and (max-device-width:425px) {
@@ -381,6 +396,29 @@ footer h3{
         top: 0%;
         color: #57138a;
         border-bottom: 0;
-        font-size: 1em;
+        font-size: 1.75em;
     }
+    .wrapper {
+        width: 100%;
+    }
+    .media-link p {
+        text-align: center;
+        padding-top: 4em;
+    }
+    .media-link {
+        float:none;
+    }
+    .facebook,.instagram {
+        padding-bottom: 20px;
+    }
+    .instagram {
+        padding-left:120px;
+    }
+    .facebook {
+        padding-right: 100px;
+    }
+    h1 {
+        font-size: 1.75em;
+        padding: 1em 0.625em;
+    }   
 }
