@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Sans+SC:wght@300&display=swap');
+
 body {
     background-color: white;
     font-size: 18px;
     font-family: 'Noto Sans SC', sans-serif;
-
 }
+
 h1,
 h2,
 h3,
@@ -13,341 +14,413 @@ h5,
 h6 {
     font-family: 'Bree Serif', serif;
 }
-main{
-    
-}
+
+main {}
+
 header {
-    width:100%;
-    margin: 0.625em; /*10px*/
+    width: 100%;
+    margin: 0.625rem;
 }
+
 /*navigation styling*/
 nav {
     float: right;
-    margin-top: 1.125em; /*18px*/
+    margin-top: 1.125em;
 }
 
-nav ul {
-    
-}
+nav ul {}
+
 nav ul li {
     display: inline-block;
-    margin:2.2em 0.1em; /*15px 10px*/
+    margin: 2rem 0.15rem;
 }
+
 nav ul li a {
-    color:black;
+    color: black;
     font-weight: bold;
     text-decoration: none;
-/*    background-color: cornflowerblue;*/
-/*    padding:0.9375em 0.625em;*/
-/*    border-right: 2px solid black;*/
-    padding:0.4em 0.625em;
+    padding: 0.4em 0.625em;
 }
-nav ul li a:hover{
-    background-color:antiquewhite;
-    border-bottom:0px;
+
+nav ul li a:hover {
+    background-color: antiquewhite;
+    /*    border i use px for all border*/
+    border-bottom: 0px;
 }
+
 /*footer styling*/
 footer {
     background-color: gray;
 }
+
+/*MEDIA STYLING IN THE FOOTER*/
+.media-link {
+    float: right;
+}
+
+/*Media icon */
+.facebook,
+.instagram {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.facebook img:hover,
+.intagram img:hover {
+    cursor: pointer;
+}
+
+.p-footer {
+    padding: 0.625em 0.625em;
+    text-align: center;
+}
+
+footer h3 {
+    padding: 1.5rem;
+    margin: 0;
+    float: left;
+}
+
+.list-footer {
+    width: 100%;
+    text-align: center;
+    clear: both;
+}
+
+.list-footer li {
+    display: inline-block;
+
+}
+
+.list-footer li a {
+    padding-left: 1.25em;
+    padding-top: 1.25em;
+    text-decoration: none;
+    color: black;
+}
+
+.list-footer li a:hover {
+    color: antiquewhite;
+}
+
 /*logo*/
 h1 {
-    font-size: 2.25rem;
-    padding: 1.25em 0.625em;
-    background-color:antiquewhite ;
-    display:inline-block;
+    font-size: 2.25em;
+    padding: 1.25rem 0.625rem;
+    background-color: antiquewhite;
+    display: inline-block;
 }
-h1 a{
+
+h1 a {
     text-decoration: none;
     font-size: 90%;
-    letter-spacing: 0.0625em;
-    word-spacing: 0.3125em;
+    letter-spacing: 0.0825rem;
+    word-spacing: 0.4125rem;
 }
+
 h1 a:hover {
     color: #DB7093;
     cursor: pointer;
 }
 
+/*HEADING STYLING*/
 h2 {
+    clear: both;
     font-size: 1.9em;
-    color:darkslategray;
+    color: darkslategray;
     font-weight: 100;
     padding: 2em 0 0.3125em 0;
+    /*    border i use px for all border*/
     border-bottom: 3px double red;
     text-align: center;
-    word-spacing: 0.1875em;
-    letter-spacing: 0.0625em;
+    /*    letter and word spacing need to change to rem*/
+    word-spacing: 0.2875rem;
+    letter-spacing: 0.0825rem;
 }
+
+main h3 {
+    margin: 5rem 0 2.2rem 0;
+}
+
 h3 {
     font-size: 1.75em;
     text-align: center;
-/*    padding: 50px 50px;*/
-}
-main h3{
-	margin: 5em 0 2em 0;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2875rem;
 }
 
-p{
-    width:90%
+/*PARAGRAPH STYLING*/
+
+p {
     margin: 0 auto;
-    line-height: 1.875em;
+    line-height: 1.8rem;
     margin: 1.25em 0;
+}
+
+/*IMAGES STYLING*/
+main img {
+    width: 100%;
+}
+
+.body-image {
+    width: 100%;
+    margin: 1.25em 0;
+    border: 15px solid #DAC7CF;
+    background: #DAC7CF;
 }
 
 main img {
-    width:100%;
-    margin: 1.25em 0;
-}
-.page-title {
-    background-image: url(../images/churchill-house-4.jpg);
-	background-size: cover;
-    width:100%;
-    height:auto;
-    position: relative;
-    overflow: hidden;
-	background-color: red;
+    box-sizing: border-box;
+    display: inline-block;
 }
 
+/*HERO CONTENT IN HOME PAGE STYLING*/
+.page-title {
+    background-image: url(../images/churchill-house-4.jpg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    background-color: red;
+}
+
+/*APPLY OVERLAY ON IMAGE*/
 .page-title .overlay {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: :100%;
     background: #5B574E;
     opacity: 0.7;
 }
+
 .page-title h2 {
     position: absolute;
     width: 100%;
     text-align: center;
-    bottom:48%;
+    bottom: 48%;
     color: #57138a;
-    border-bottom: 0;  
+    border-bottom: 0;
     font-size: 3em;
 }
+
+/*HIDDEN THE IMAGE BUT THE IMAGE STILL IN HERE*/
 .page-title img {
-	visibility: hidden;
-    filter:grayscale();
+    visibility: hidden;
+    filter: grayscale();
     height: 100%;
     margin-top: 1.875em;
 }
 
-.body-image {
-    width: 100%;
-    margin: 1.25em 0px;
-    border: 0.9375em solid #DAC7CF;
-    background: #DAC7CF;
-}
+/*WRAPPER CONTAIN ALL THE ELEMENTS*/
 .wrapper {
     width: 70%;
-    padding: 3.125em;
+    padding: 3.5rem;
     margin: 0 auto;
 }
-main ul{
+
+/*UNORDER LIST STYLING IN THE MAIN*/
+main ul {
     list-style: square inside none;
-    margin:0;
-    padding-left: 5em; 
+    margin: 0;
+    padding-left: 5em;
+    margin-bottom: 1.25em;
 }
+
 main ul li {
     line-height: 1.875em;
     font-style: italic;
 }
-p, main li {
+
+p,
+main li {
     text-align: justify;
 }
 
-.media-link {
-    float:right;
-/*
-    position:relative;
-    top:-90px;
-    right:0px;
-*/
-}
-/*Media icon */
-.media-link p {
-/*    margin: 5px 0px 5px 0px;*/
-}
-.facebook,.instagram{
-    width:2.5em;
-    height:2.5em;
-}
-.facebook img:hover,.intagram img:hover {
-    cursor: pointer;
-}
-.p-footer{
-    padding: 0.625em 0.625em;
-}
-footer h3{
-    padding:0.625em;
-    margin:0px;
-/*    text-align: left;*/
-    float: left;
+/*CURRENT PAGE STYLING*/
+.current-page {
+    border-bottom: 3px solid #b18b9b;
 }
 
-.list-footer {
-     width: 100%;
-	text-align: center;
-	clear: both;
-}
-.list-footer li{
-    display:inline-block;
-
-}
-.list-footer li a {
-    padding-left:1.25em;
-    padding-top:1.25em;
-    text-decoration: none;
-    color:black;
-}
-.list-footer li a:hover{
-    color: antiquewhite;
-}
-/*
-.list-footer li a:visited {
-    color: darkgrey;
-}
-*/
-.current-page{
-    border-bottom: 0.1875em solid #b18b9b;
-}
-
-.next {
-/*    position:relative;*/
-/*    top: -10px;*/
-/*    right: -720px;*/
-    text-decoration: none;
-}
-
-.next:hover,.previous:hover {
-    color: #DB7093;
-}
+/*NEXT PAGE, PREVIOUS PAGE STYLING*/
+.next,
 .previous {
     text-decoration: none;
 }
 
+.next:hover,
+.previous:hover {
+    color: #DB7093;
+}
+
+.footer-navigation {
+    height: 1.25em;
+    padding: 1.25em 0;
+}
+
+.footer-navigation .left {
+    float: left;
+    width: 45%;
+}
+
+.footer-navigation .right {
+    float: right;
+    width: 45%;
+    text-align: right;
+}
+
+/*IMAGE TO BE FLOATED TO LEFT OR RIGHT*/
 .left-image {
     float: right;
     width: 50%;
     height: 50%;
     padding: 0.3125em 1.25em;
 }
+
 .right-image {
     float: left;
     width: 50%;
     height: 50%;
     padding: 0.3125em 1.25em;
 }
-/*
-.pool-area {
-    padding-bottom: 5em;
-}
-*/
 
-.footer-navigation {
-    height: 1.25em;
-    padding: 1.25em 0;
-}
-.footer-navigation .left {
-    float: left;
-    width: 45%;
-}
-.footer-navigation .right {
-    float: right;
-    width: 45%;
-    text-align: right;
-}
-/*back to top button*/
-.back-top .hidden{
+
+/*  BACK TO TOP */
+.back-top .hidden {
     visibility: hidden;
     line-height: 0px;
     padding-bottom: 0.625em;
 }
-.back-top:hover .hidden{
+
+.back-top:hover .hidden {
     visibility: visible;
 }
+
 .back-top .button {
     width: 3.75em;
-    height:3.75em;
+    height: 3.75em;
     background-color: grey;
     border-radius: 100%;
 }
+
 .back-top .button:hover {
-    background-color:antiquewhite;
+    background-color: antiquewhite;
     border-radius: 0;
     border-color: antiquewhite;
 }
+
 .back-top .button a {
     font-size: 2.5em;
     padding: 3.125em 0em 0.625em 0.26em;
 }
-#remove-right-border {
-    border-right: 0;
+
+.back-top {
+    margin: 1.25em;
+    flex-wrap: wrap;
+    display: flex;
+
 }
+
+/*BODY lINK STYLING*/
 .external-link {
     text-decoration: none;
 }
+
 .external-link:hover {
     text-decoration: underline;
 }
+
 /*information page*/
 .information-ul {
-    margin:0.625em 2.5em;
+    margin: 0.625em 2.5em;
 }
+
 .information-ul li a {
     text-decoration: none;
 }
+
 .information-ul li a:hover {
     color: #b18b9b;
 }
+
 .information-ul li {
-    padding: 0.625em 0em ;
+    padding: 0.625em 0em;
 }
+
 .contact-us ul {
-    margin:0.625em 2.5em;
+    margin: 0.625em 2.5em;
 }
-.contact-us ul li{
-    margin:0.625em 0;
+
+.contact-us ul li {
+    margin: 0.625em 0;
 }
+
+.contact-us ul li a {
+    text-decoration: none;
+}
+.contact-us ul li a:hover {
+    text-decoration: underline;
+}
+
 .contact-img {
     text-align: center;
-	width: 100%;
+    width: 100%;
 }
-	.contact-img img{
-		width: 20%;
-	}
+
+.contact-img img {
+    width: 20%;
+}
+
+/*USING GRID FOR DISPLAY IMAGES*/
+.information-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* fr = fractional unit	*/
+    grid-gap: 2.5rem;
+}
+
 .first {
-  float: left;
-  width: 45%;
-  padding: 0.625em 0.625em;
-    display: inline;
+    width: 100%;
+    padding: 0.625em 0.625em;
+    margin: 1.25em 0;
 }
+
 .second {
-  float: right;
-  width: 45%;
-  padding: 0.625em 0.625em;
+    width: 100%;
+    padding: 0.625em 0.625em;
+    margin: 1.25em 0;
 }
-.information-img::after {
-  content: "";
-  clear: both;
-  display:table;
-}
-#control-1,#control-2,#control-3,#control-4,#control-5,#control-6,#control-7,#control-8 {
+
+#control-1,
+#control-2,
+#control-3,
+#control-4,
+#control-5,
+#control-6,
+#control-7,
+#control-8 {
     height: 35.3125em;
 }
-.about-us img,.first,.second {
-    border: 0.3125em solid #DAC7CF;
+
+.about-us img,
+.first,
+.second {
+    border: 5px solid #DAC7CF;
     background: #DAC7CF;
 }
-.information-page ul{
+
+.information-page ul {
     list-style: inside none;
     padding-left: 1.25em;
 }
+
 /*list next to image to reduce padding left*/
-.list-next-image ul{
+.list-next-image ul {
     padding-left: 2.5em;
 }
+
 /*quote */
 .quote {
     text-align: center;
@@ -356,39 +429,59 @@ footer h3{
     font-style: italic;
     font-weight: 550;
     padding: 0.3125em 0;
-    border-top: 0.0625em double #211738;
-    border-bottom: 0.0625em double #211738;
+    /*    border i use px for all border*/
+    border-top: 1px double #211738;
+    border-bottom: 1px double #211738;
 }
-/*responsive device*/
-@media screen and (max-device-width:1280px) {
+
+/*responsive device I USED PX TO EASY TO ADJUST*/
+@media screen and (max-device-width:1024px) {
     .wrapper {
-        background-color: red;
-    }
-    nav {
-    float: left;
-    margin-top: 3.125em;
-    margin-bottom: 3.125em;
+        width: 90%;
+        padding: 20px;
     }
 }
 
+/*TABLET SIZES*/
 @media screen and (max-device-width:768px) {
     .wrapper {
-        width: 90%;
+        padding: 20px;
+        width: 100%;
     }
-    .first,.second {
-        width:100%;
-    } 
-    .left-image,.right-image {
+
+    .information-img {
+        grid-template-columns: 1fr;
+    }
+
+    .left-image,
+    .right-image {
         float: none;
         width: 100%;
-        height: 50%;
         padding: 0.0625em 0.0625em;
     }
-    main ul{
-        padding-left: 1.25em; 
+
+    main ul {
+        padding-left: 2rem;
+    }
+
+    nav {
+        float: none;
+        text-align: center;
+    }
+
+    h1 {
+        display: flow-root;
+        text-align: center;
+        padding: 1.25rem 0.625rem;
     }
 }
+
+/*MOBILE SIZES*/
 @media screen and (max-device-width:425px) {
+    nav {
+        text-align: center;
+    }
+
     .page-title h2 {
         position: absolute;
         width: 100%;
@@ -398,27 +491,38 @@ footer h3{
         border-bottom: 0;
         font-size: 1.75em;
     }
+
     .wrapper {
         width: 100%;
+        padding: 20px;
     }
+
+    footer h3 {
+        float: none;
+    }
+
     .media-link p {
+        clear: both;
         text-align: center;
-        padding-top: 4em;
     }
+
     .media-link {
-        float:none;
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 2em;
     }
-    .facebook,.instagram {
-        padding-bottom: 20px;
+
+    .p-footer {
+        text-align: center;
     }
-    .instagram {
-        padding-left:120px;
-    }
-    .facebook {
-        padding-right: 100px;
-    }
+
     h1 {
         font-size: 1.75em;
         padding: 1em 0.625em;
-    }   
+    }
+
+    main ul {
+        padding-left: 0;
+    }
 }

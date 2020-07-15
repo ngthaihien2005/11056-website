@@ -6,13 +6,16 @@
     <link type="text/css" rel="stylesheet" href="assets/css/reset.css">
     <link type="text/css" rel="stylesheet" href="assets/css/styles.css">
     <meta charset="utf-8">
+    <!--    SET UP VIEW PORT-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+    <!--    create a wrapper to hold all elements of the page-->
     <div class="wrapper">
         <header>
-            <h1 id="top"><a href="index.html" title="Home" >Churchill House</a></h1>
+            <!--            id for back to top button and link for returning home button-->
+            <h1 id="top"><a href="index.html" title="Home">Churchill House</a></h1>
 
             <nav>
                 <ul>
@@ -20,7 +23,7 @@
                     <li><a href="description.html">Description</a></li>
                     <li><a href="history.html">History</a></li>
                     <li><a href="robin-boyd.html">Robin Boyd</a></li>
-                    <li><a href="statement.html" id="remove-right-border">Statement</a></li>
+                    <li><a href="statement.html">Statement</a></li>
                 </ul>
             </nav>
         </header>
@@ -29,20 +32,21 @@
             <div class="information-page">
                 <p>In this page: </p>
                 <ul class="information-ul">
-                    <li><a href="#contact-us">> Contact us</a></li>
-                    <li><a href="#about-us">> About us</a></li>
+                    <li><a href="#contact-us" title="Go to contact us part">> Contact us</a></li>
+                    <li><a href="#about-us" title="Go to About us part">> About us</a></li>
                 </ul>
-                <div class="contact-us" id="contact-us">
+                <div class="contact-us">
                     <h3>Contact us</h3>
                     <p>We are here to help you with your concerns. If you have any further question, please do not hesitate to contact us by one of following help lines: </p>
+                    <!--                    create phone number and email clickable-->
                     <ul>
-                        <li>> InSide Australia: 1300 0000 5555</li>
-                        <li>> Outside Australia: 3333 3333 333</li>
+                        <li>> InSide Australia: <a href="tel:1300-0000-5555" title="Call 1300 0000 5555">1300 0000 5555</a></li>
+                        <li>> Outside Australia: <a href="tel:3333-3333-333" title="Call 3333 3333 333">3333 3333 333</a></li>
                     </ul>
                     <p>We are also contacted by emails. We are trying our best to reply on your emails on 2-5 business days.Our emails are:</p>
                     <ul>
-                        <li>> General enqueries: generalenqueries@churchillhouse.com</li>
-                        <li>> Job interest: jobs@churchillhouse.com</li>
+                        <li>> General enqueries: <a href="mailto:generalenqueries@churchillhouse.com" title="Email us today">generalenqueries@churchillhouse.com</a></li>
+                        <li>> Job interest: <a href="mailto:jobs@churchillhouse.com" title="Email us today">jobs@churchillhouse.com</a></li>
                     </ul>
                     <p class="contact-img"><img src="assets/images/contactus.png" alt="contact us icon"></p>
                 </div>
@@ -50,6 +54,7 @@
             <div class="about-us" id="about-us">
                 <h3>About us</h3>
                 <p>I create this website is for my the churchill house introduction. The text resources and images provided in the Front-End Website Design at University of Canberra 2020. The website is simple created by html and css and no JavaScripts or jQuery was applied to the pages in the web pages. There are several images that can be found below. Theses images is for images about churchill house. Also, you can find us on instagram or facebook with the links at the bottom of the pages.</p>
+                <!--                display images using grid-->
                 <div class="information-img">
                     <img src="assets/images/churchill-house-45.jpg" alt="churchill house image" class="first" id="control-1">
                     <img src="assets/images/churchill-house-46.jpg" alt="churchill house image" class="second" id="control-2">
