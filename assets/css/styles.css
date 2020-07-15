@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Sans+SC:wght@300&display=swap');
 
+
 body {
     background-color: white;
     font-size: 18px;
@@ -18,7 +19,7 @@ h6 {
 main {}
 
 header {
-    width: 100%;
+    /*    width: 100%;*/
     margin: 0.625rem;
 }
 
@@ -157,6 +158,10 @@ p {
     margin: 1.25em 0;
 }
 
+.pool {
+    padding-bottom: 7rem;
+}
+
 /*IMAGES STYLING*/
 main img {
     width: 100%;
@@ -172,6 +177,17 @@ main img {
 main img {
     box-sizing: border-box;
     display: inline-block;
+}
+
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-2-col .right-image {
+    width: 100%;
+    height: auto;
+    float: unset !important;
 }
 
 /*HERO CONTENT IN HOME PAGE STYLING*/
@@ -216,9 +232,11 @@ main img {
 
 /*WRAPPER CONTAIN ALL THE ELEMENTS*/
 .wrapper {
-    width: 70%;
-    padding: 3.5rem;
+    max-width: 1200px;
+    /*    padding: 3.5rem;*/
+    padding: 1rem 5.5rem;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 /*UNORDER LIST STYLING IN THE MAIN*/
@@ -294,8 +312,18 @@ main li {
     padding-bottom: 0.625em;
 }
 
-.back-top:hover .hidden {
-    visibility: visible;
+div.button {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-top .button a {
+    position: relative;
+    top: -3px;
+    padding: 0 !important;
 }
 
 .back-top .button {
@@ -332,6 +360,11 @@ main li {
     text-decoration: underline;
 }
 
+a {
+    color: purple;
+    text-decoration: none;
+}
+
 /*information page*/
 .information-ul {
     margin: 0.625em 2.5em;
@@ -360,6 +393,7 @@ main li {
 .contact-us ul li a {
     text-decoration: none;
 }
+
 .contact-us ul li a:hover {
     text-decoration: underline;
 }
@@ -381,27 +415,12 @@ main li {
     grid-gap: 2.5rem;
 }
 
-.first {
-    width: 100%;
-    padding: 0.625em 0.625em;
-    margin: 1.25em 0;
-}
-
+.first,
 .second {
+    box-sizing: border-box;
     width: 100%;
     padding: 0.625em 0.625em;
     margin: 1.25em 0;
-}
-
-#control-1,
-#control-2,
-#control-3,
-#control-4,
-#control-5,
-#control-6,
-#control-7,
-#control-8 {
-    height: 35.3125em;
 }
 
 .about-us img,
@@ -435,22 +454,46 @@ main li {
 }
 
 /*responsive device I USED PX TO EASY TO ADJUST*/
-@media screen and (max-device-width:1024px) {
+@media screen and (max-device-width:1200px) {
     .wrapper {
         width: 90%;
         padding: 20px;
+    }
+
+    nav {
+        float: none;
+        text-align: center;
+    }
+
+    h1 {
+        /*        display: flow-root;*/
+        display: block;
+        text-align: center;
+        padding: 1.25rem 0.625rem;
+    }
+}
+
+@media screen and (max-device-width:1024px) {
+    .pool {
+        padding:0;
     }
 }
 
 /*TABLET SIZES*/
 @media screen and (max-device-width:768px) {
+
+    .grid-2-col {
+        grid-template-columns: 1fr;
+    }
+
     .wrapper {
         padding: 20px;
-        width: 100%;
+        /*        width: 100%;*/
     }
 
     .information-img {
         grid-template-columns: 1fr;
+        grid-gap: 0;
     }
 
     .left-image,
@@ -470,7 +513,7 @@ main li {
     }
 
     h1 {
-        display: flow-root;
+        display: block;
         text-align: center;
         padding: 1.25rem 0.625rem;
     }
@@ -493,7 +536,7 @@ main li {
     }
 
     .wrapper {
-        width: 100%;
+        /*        width: 100%;*/
         padding: 20px;
     }
 
@@ -523,6 +566,6 @@ main li {
     }
 
     main ul {
-        padding-left: 0;
+        padding-left: 1rem;
     }
 }

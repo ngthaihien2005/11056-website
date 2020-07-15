@@ -12,8 +12,9 @@
 
 <body>
     <!--    create wrapper div tag to hold all the elements-->
-    <div class="wrapper">
-        <header>
+
+    <header>
+        <div class="wrapper">
             <!--            id for back to top button and also return home button-->
             <h1 id="top"><a href="index.html" title="Home">Churchill House</a></h1>
             <nav>
@@ -25,8 +26,10 @@
                     <li><a href="statement.html">Statement</a></li>
                 </ul>
             </nav>
-        </header>
-        <main>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
             <h2>Churchill House Description</h2>
             <h3>General Description</h3>
             <!--            links to internal parts of this page-->
@@ -44,15 +47,17 @@
 
 
             <h3 id="north-wing">North Wing</h3>
-            <img class="right-image" src="assets/images/churchill-house-20.jpg" alt="churchill house North Wing">
-            <p class="north-wing">The north wing replaces an earlier pavilion on the same location. The current wing is a two storey structure with a flat metal deck roof set behind a parapet. The wing has an encircling steel colonnade which supports the roof and parapet. The walls are set back from the colonnade and feature flush-mounted glazing set in thin black metal frames, with textured off-form concrete spandrels, similar to the south wall of the south wing. There is an enclosed link between the north and east wings at the ground floor level.</p>
-
-            <h3 id="pool">Pool Area, Carpark and Landscaping</h3>
-            <img class="left-image" src="assets/images/churchill-house-21.jpg" alt="churchill house Areas">
-            <p>The pool area is lower than the surrounding site, and being mostly enclosed by the wings, has the quality of a sunken courtyard. The pool area is reached by a large flight of concrete steps from the west, and features a pond which borders a large, raised central island which is reached from one side by a set of bridging steps. The island has concrete paving, garden beds and silver birch trees, and is the location for a large fibreglass statue of Sir Winston Churchill.</p>
-            <p>The carpark is constructed in off-form concrete, with walls displaying the texture of the timber formwork.</p>
-            <p class="pool-area">Churchill House has a number of landscape/garden areas. At the front (west) of the building is an open lawn area and either side are mixed native/exotic plantings. The pool area contains numerous trees and shrubs, again of mixed native/exotic species. A small courtyard to the southeast of the main building features bamboo.
-            </p>
+            <div class="grid-2-col">
+                <img class="right-image" src="assets/images/churchill-house-20.jpg" alt="churchill house North Wing">
+                <p class="north-wing">The north wing replaces an earlier pavilion on the same location. The current wing is a two storey structure with a flat metal deck roof set behind a parapet. The wing has an encircling steel colonnade which supports the roof and parapet. The walls are set back from the colonnade and feature flush-mounted glazing set in thin black metal frames, with textured off-form concrete spandrels, similar to the south wall of the south wing. There is an enclosed link between the north and east wings at the ground floor level.</p>
+            </div>
+            <div class="pool" id="pool">
+                <h3>Pool Area, Carpark and Landscaping</h3>
+                <img class="left-image" src="assets/images/churchill-house-21.jpg" alt="churchill house Areas">
+                <p>The pool area is lower than the surrounding site, and being mostly enclosed by the wings, has the quality of a sunken courtyard. The pool area is reached by a large flight of concrete steps from the west, and features a pond which borders a large, raised central island which is reached from one side by a set of bridging steps. The island has concrete paving, garden beds and silver birch trees, and is the location for a large fibreglass statue of Sir Winston Churchill.</p>
+                <p>The carpark is constructed in off-form concrete, with walls displaying the texture of the timber formwork.</p>
+                <p class="pool-area">Churchill House has a number of landscape/garden areas. At the front (west) of the building is an open lawn area and either side are mixed native/exotic plantings. The pool area contains numerous trees and shrubs, again of mixed native/exotic species. A small courtyard to the southeast of the main building features bamboo.</p>
+            </div>
             <h3 id="stylistic">Stylistic Analysis</h3>
             <p>Churchill House displays several key features of the Late Twentieth Century Brutalist style as follows.</p>
             <ul>
@@ -96,8 +101,10 @@
                     <a href="history.html" class="next" title="Go to next page">Next Page &raquo;</a>
                 </div>
             </div>
-        </main>
-        <footer class="footer">
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
             <div class="header-footer">
                 <h3>Churchill House</h3>
             </div>
@@ -116,6 +123,6 @@
                 <li> <a href="information.html">About us</a></li>
             </ul>
             <p class="p-footer">This website was produced by students in the Faculty of Arts & Design, University of Canberra, 2020.</p>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body></html>
