@@ -420,7 +420,7 @@ a {
     box-sizing: border-box;
     width: 100%;
     padding: 0.625em 0.625em;
-    margin: 1.25em 0;
+/*    margin: 1.25em 0;*/
 }
 
 .about-us img,
@@ -488,12 +488,11 @@ a {
 
     .wrapper {
         padding: 20px;
-        /*        width: 100%;*/
     }
 
     .information-img {
         grid-template-columns: 1fr;
-        grid-gap: 0;
+/*        grid-gap: 0;*/
     }
 
     .left-image,
@@ -536,7 +535,6 @@ a {
     }
 
     .wrapper {
-        /*        width: 100%;*/
         padding: 20px;
     }
 
